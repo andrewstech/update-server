@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "tauri-update-server",
+    "builds": [
+        {
+            "src": "lib/server.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": ".*",
+            "dest": "/lib/server.js"
+        }
+    ]
+}
